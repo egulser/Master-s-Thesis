@@ -1,0 +1,10 @@
+﻿,abstract,routine,manual,occ_mean_abs,occ_mean_rou,occ_mean_man,onet_abstr~t,onet_routine,onet_manual
+abstract,1,,,,,,,,
+routine,-0.700,1.000,,,,,,,
+manual,-0.103,0.098,1.000,,,,,,
+occ_mean_abs,0.535,-0.492,-0.325,1.000,,,,,
+occ_mean_rou,-0.495,0.532,0.294,-0.926,1.000,,,,
+occ_mean_man,-0.347,0.313,0.500,-0.649,0.589,1.000,,,
+onet_abstr~t,0.394,-0.399,-0.330,0.736,-0.750,-0.660,1.000,,
+onet_routine,-0.356,0.389,0.272,-0.666,0.732,0.544,-0.759,1.000,
+onet_manual,-0.417,0.405,0.388,-0.778,0.762,0.774,-0.796,0.789,1.000
