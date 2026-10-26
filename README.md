@@ -78,6 +78,11 @@ per table, and the preamble was cleaned. Checks:
   - The appendix heading "Apendix" is now "Appendix".
   - The tables are numbered 1–13. Before, the numbering skipped Table 7
     because a `longtable` inside a table float stepped the counter twice.
+  - Two quotations in Chapters 1 and 2 had only an opening or only a
+    closing quotation mark; both are now complete. Nine pairs of straight
+    quotation marks are now typographic quotes, as in the rest of the thesis.
+  - A stray `="` (a leftover from a spreadsheet export) is removed from the
+    note of Table A6.
 
 `legacy/MA-Thesis.lyx` is kept for reference only. It expects the original
 `figs/` and `tables/` layout. To build it in LyX, check out commit `5135f8e`.
