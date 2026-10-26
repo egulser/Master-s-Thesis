@@ -1,0 +1,24 @@
+# LaTeX build output (latexmk writes everything here)
+.build/
+
+# LaTeX auxiliary files, in case of a build without latexmk
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.synctex.gz
+*.toc
+
+# Editor and OS files
+.DS_Store
+*~
+\#*\#
+*.lyx.emergency
+
+# Stata
+*.smcl

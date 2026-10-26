@@ -1,0 +1,8 @@
+# Keep archived material out of GitHub's language statistics
+extras/** linguist-vendored
+legacy/** linguist-vendored
+
+*.pdf binary
+*.png binary
+*.eps binary
+*.dta binary

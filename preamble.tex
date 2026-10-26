@@ -1,0 +1,75 @@
+% Package order follows the original LyX export; reordering shifts the page
+% layout (verified page by page against the 2023 PDF), so keep it as is.
+
+% Fonts, encoding, paragraphs
+\usepackage{newtxmath}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\setlength{\parskip}{6bp}
+\setlength{\parindent}{0pt}
+\usepackage{babel}
+
+% Tables, floats, graphics, spacing
+\usepackage{array}
+\usepackage{verbatim}           % comment environment for the author's draft notes
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{rotfloat}           % sidewaystable / sidewaysfigure with [H]
+\usepackage{tablefootnote}
+\usepackage{setspace}
+
+% Hyperlinks (colours set at the end of this file)
+\usepackage[unicode=true, pdfusetitle, bookmarks=true, bookmarksnumbered=false,
+  bookmarksopen=false, breaklinks=false, pdfborder={0 0 1}, backref=false,
+  colorlinks=true]{hyperref}
+
+% Bibliography: APA style via apacite, natbib-style \citet / \citep
+\usepackage[natbibapa]{apacite}
+\renewcommand{\bibname}{REFERENCES}
+
+% Page layout
+\usepackage[a4paper, left=4cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+
+% Mathematics
+\newtheorem{theorem}{Proposition}
+\everymath{\displaystyle}
+\usepackage[labelfont=bf]{caption}
+\usepackage{url}
+\AtBeginDocument{%
+  \addtolength{\abovedisplayskip}{-3ex}%
+  \addtolength{\abovedisplayshortskip}{-3ex}%
+  \addtolength{\belowdisplayskip}{-3ex}%
+  \addtolength{\belowdisplayshortskip}{-3ex}}
+
+% Table helpers
+\newcommand{\rowgroup}[1]{\hspace{-1em}#1}
+\usepackage{pbox}
+\usepackage[table]{xcolor}
+\usepackage[bottom]{footmisc}   % keep footnotes below floats placed at the page bottom
+
+% Appendix, table of contents, headings
+\usepackage[titletoc]{appendix}
+\usepackage{titletoc}
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\AtBeginDocument{\renewcommand\contentsname{CONTENTS}}
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\fontsize{12}{15}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\fontsize{12}{14}\bfseries}{\thesubsection}{1em}{}
+
+\hypersetup{
+  linkcolor   = magenta,
+  anchorcolor = magenta,
+  citecolor   = blue,
+  filecolor   = blue,
+  urlcolor    = blue}
+
+% subfig must come after tocloft (both define \c@lofdepth); caption=false
+% leaves caption formatting to the caption package
+\usepackage[caption=false]{subfig}
